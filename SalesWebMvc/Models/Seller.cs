@@ -9,13 +9,14 @@ namespace SalesWebMvc.Models
     {
         public Seller() { }
 
-        public Seller(int id, string name, string email, double baseSalary, DateTime birthDate)
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department)
         {
             Id = id;
             Name = name;
             Email = email;
             BaseSalary = baseSalary;
             BirthDate = birthDate;
+            Department = department;
         }
 
         public int Id { get; set; }

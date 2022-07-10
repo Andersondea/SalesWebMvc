@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalesWebMvc.Data
+namespace SalesWebMvc.Data.Models
 {
     #region Departments
     public class MapDepartment : IEntityTypeConfiguration<Department>
