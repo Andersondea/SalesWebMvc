@@ -15,5 +15,13 @@ namespace SalesWebMvc.Data
         }
 
         public DbSet<SalesWebMvc.Models.Department> Department { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration<Department>(new MapDepartment());
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
